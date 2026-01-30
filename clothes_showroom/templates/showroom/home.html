@@ -1,0 +1,22 @@
+{% extends 'showroom/base.html' %}
+
+{% block content %}
+<h2 class="text-center mb-4">Latest Collection</h2>
+
+<div class="row">
+{% for product in products %}
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <img src="{{ product.image.url }}" class="card-img-top">
+            <div class="card-body">
+                <h5>{{ product.name }}</h5>
+                <p>₹ {{ product.price }}</p>
+                <a href="{% url 'product_detail' product.id %}" class="btn btn-custom w-100">
+                    View Details
+                </a>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+body {
+    background-color: #e6ccb2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-navbar, .custom-footer {
+    background-color: #7f5539;
+}
+
+.card {
+    background-color: #ddb892;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.btn-custom {
+    background-color: #9c6644;
+    color: white;
+    border-radius: 25px;
+}
+
+.btn-custom:hover {
+    background-color: #b08968;
+}
